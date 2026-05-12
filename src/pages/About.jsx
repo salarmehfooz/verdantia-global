@@ -163,7 +163,7 @@ export default function About() {
               </div>
 
               {/* QUOTE (UNCHANGED) */}
-              <div className="font-serif text-2xl italic text-ocean border-l-4 border-ocean-mid pl-8 mb-12 leading-relaxed">
+              <div className="font-serif text-2xl text-justify italic text-ocean border-l-4 border-ocean-mid pl-8 mb-12 leading-relaxed">
                 "We believe sustainability should not exist only in strategy
                 documents or reporting frameworks. It should translate into
                 realistic action, measurable progress, and long-term value for

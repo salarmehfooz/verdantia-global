@@ -169,7 +169,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="hidden lg:grid grid-cols-2 gap-4 auto-rows-min"
+            className=" grid-cols-2 gap-4 auto-rows-min"
           >
             <div className="bg-white/80 backdrop-blur-md border border-sky/20 rounded-2xl p-6 shadow-xl shadow-ocean/5 hover:-translate-y-1 transition-transform">
               <div className="w-10 h-10 rounded-xl bg-mint flex items-center justify-center text-xl mb-4">
