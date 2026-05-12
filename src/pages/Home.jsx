@@ -140,6 +140,9 @@ export default function Home() {
             <motion.div
               custom={4}
               variants={revealVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-forest/10"
             >
               {[
@@ -152,7 +155,7 @@ export default function Home() {
                   <div
                     className={`font-serif text-4xl font-bold ${i % 2 === 1 ? "text-ocean-mid" : "text-forest"}`}
                   >
-                    <Counter value={s.n} />
+                    <Counter key={s.n} value={s.n} />
                   </div>
                   <div className="text-[11px] text-muted uppercase tracking-wider mt-1">
                     {s.l}
