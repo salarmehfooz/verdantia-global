@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Target, Globe, Zap, ArrowRight } from "lucide-react";
-
+import ceo from "../assets/ceo.png";
 export default function About() {
   const revealVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -144,7 +144,7 @@ export default function About() {
               {/* CEO IMAGE (ONLY ADDITION) */}
               <div className="flex flex-col items-center mb-10 text-center">
                 <img
-                  src="/ceo.png"
+                  src={ceo}
                   alt="CEO of Verdantia Global"
                   className="w-30 h-30 rounded-full object-cover object-[center_25%] border-4 border-white shadow-xl"
                 />
