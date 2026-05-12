@@ -53,7 +53,7 @@ export default function About() {
             animate="visible"
             custom={3}
             variants={revealVariants}
-            className="text-xl text-muted font-light max-w-2xl leading-relaxed"
+            className="text-xl text-justify text-muted font-light max-w-2xl leading-relaxed"
           >
             Founded by sustainability practitioners with decades of field
             experience, Verdantia Global was built on the conviction that
@@ -99,7 +99,7 @@ export default function About() {
               variants={revealVariants}
               className="space-y-6 text-slate/80 leading-relaxed font-light"
             >
-              <p>
+              <p className=" text-justify">
                 Verdantia Global LLC is a sustainability and impact consultancy
                 focused on helping businesses, institutions, communities, and
                 development partners navigate environmental, social, and
@@ -107,7 +107,7 @@ export default function About() {
                 implementation-focused solutions.
               </p>
 
-              <p>
+              <p className=" text-justify">
                 With international positioning and strong local roots through
                 Verdantia Pakistan, Verdantia works across sustainability
                 advisory, ESG support, climate-smart agriculture, environmental
@@ -115,7 +115,7 @@ export default function About() {
                 building, and sustainability partnerships.
               </p>
 
-              <p>
+              <p className=" text-justify">
                 We believe sustainability should be practical, inclusive, and
                 capable of creating measurable value for both people and the
                 environment.
@@ -220,7 +220,7 @@ export default function About() {
               Mission
             </h2>
             <div className="w-16 h-[3px] bg-linear-to-r from-forest-light to-ocean-light rounded-full mb-8" />
-            <p className="text-lg text-slate/80 leading-relaxed font-light">
+            <p className="text-lg text-justify text-slate/80 leading-relaxed font-light">
               To help organizations, businesses, and communities implement
               practical sustainability and impact solutions that support
               responsible growth, environmental resilience, and long-term social

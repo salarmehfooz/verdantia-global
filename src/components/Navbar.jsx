@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { name: "Our Services", path: "/services" },
   { name: "Why Us?", path: "/whyUs" },
   { name: "Partnerships", path: "/partners" },
+  { name: "Verdantia Pakistan", path: "/pakistan" }
 ];
 
 export default function Navbar() {

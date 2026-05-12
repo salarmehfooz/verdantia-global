@@ -73,7 +73,7 @@ export default function WhyUs() {
                 </span>
               </h1>
 
-              <p className="mt-8 max-w-2xl text-lg md:text-xl text-slate/75 leading-relaxed font-light">
+              <p className="mt-8 max-w-2xl text-justify text-lg md:text-xl text-slate/75 leading-relaxed font-light">
                 Verdantia Global combines sustainability expertise, systems
                 thinking, and implementation support to help organizations move
                 from ambition to action.
@@ -172,7 +172,7 @@ export default function WhyUs() {
               Turning Sustainability Into Measurable Progress
             </h2>
 
-            <p className="text-lg text-slate/75 leading-relaxed font-light">
+            <p className="text-lg text-justify text-slate/75 leading-relaxed font-light">
               We combine sustainability advisory, climate and community
               perspectives, ESG support, and locally informed implementation
               approaches to help organizations navigate evolving environmental
@@ -233,7 +233,7 @@ export default function WhyUs() {
 
               <div className="w-16 h-[3px] bg-linear-to-r from-forest-light to-ocean-light rounded-full mx-auto my-10" />
 
-              <p className="max-w-2xl mx-auto text-slate/70 text-lg leading-relaxed font-light mb-10">
+              <p className="max-w-2xl mx-auto text-justify text-slate/70 text-lg leading-relaxed font-light mb-10">
                 We believe lasting impact happens when sustainability becomes
                 embedded into real operations, partnerships, and
                 decision-making.

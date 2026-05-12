@@ -10,6 +10,7 @@ export default function Footer() {
     { label: "Our Services", path: "/services" },
     { label: "Why Us?", path: "/whyUs" },
     { label: "Our Partners", path: "/partners" },
+    { label: "Verdantia Pakistan", path: "/pakistan" },
   ];
 
   const services = [

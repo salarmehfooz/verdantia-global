@@ -7,6 +7,7 @@ import Team from "./pages/Team";
 import Partners from "./pages/Partners";
 import Consult from "./pages/Consult";
 import WhyUs from "./pages/WhyUs";
+import VerdantiaPakistan from "./pages/Pakistan";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="consult" element={<Consult />} />
           <Route path="whyUs" element={<WhyUs />} />
+          <Route path="pakistan" element={<VerdantiaPakistan />} />
         </Route>
       </Routes>
     </BrowserRouter>

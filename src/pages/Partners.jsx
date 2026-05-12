@@ -93,7 +93,7 @@ export default function Partners() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
-              className="text-xl text-muted font-light leading-relaxed max-w-xl"
+              className="text-xl text-justify text-muted font-light leading-relaxed max-w-xl"
             >
               Verdantia Global works alongside a curated network of multilateral
               organizations, NGOs, consultants, institutions, sustainability

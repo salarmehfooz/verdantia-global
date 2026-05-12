@@ -180,7 +180,7 @@ export default function Consult() {
                 <h2 className="font-serif text-3xl font-medium mb-4">
                   Request Received!
                 </h2>
-                <p className="text-muted leading-relaxed">
+                <p className="text-muted text-justify leading-relaxed">
                   Thank you for reaching out. One of our senior advisors will
                   contact you via email within 48 hours to schedule your free
                   discovery call.

@@ -109,7 +109,7 @@ export default function Home() {
             <motion.p
               custom={2}
               variants={revealVariants}
-              className="text-lg text-slate/80 leading-relaxed max-w-md mb-10 font-light"
+              className="text-lg text-justify text-slate/80 leading-relaxed max-w-md mb-10 font-light"
             >
               Verdantia Global helps businesses, institutions, and communities
               design practical sustainability, ESG, climate, and impact
@@ -169,7 +169,7 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className=" grid-cols-2 gap-4 auto-rows-min"
+            className=" grid grid-cols-1 sm:grid-cols-2 gap-4 auto-rows-min"
           >
             <div className="bg-white/80 backdrop-blur-md border border-sky/20 rounded-2xl p-6 shadow-xl shadow-ocean/5 hover:-translate-y-1 transition-transform">
               <div className="w-10 h-10 rounded-xl bg-mint flex items-center justify-center text-xl mb-4">
@@ -262,7 +262,7 @@ export default function Home() {
               <motion.p
                 custom={3}
                 variants={revealVariants}
-                className="text-lg text-muted max-w-2xl font-light leading-relaxed"
+                className="text-lg text-justify text-muted max-w-2xl font-light leading-relaxed"
               >
                 We tackle sustainability holistically — connecting environment,
                 social equity, and governance into coherent strategies. Our
@@ -374,7 +374,7 @@ export default function Home() {
           <h2 className="font-serif text-4xl md:text-5xl font-medium text-ink max-w-2xl mx-auto mb-6">
             Let’s Build Sustainable Growth Together
           </h2>
-          <p className="text-muted text-lg font-light max-w-lg mx-auto mb-10 leading-relaxed">
+          <p className="text-muted text-justify text-lg font-light max-w-lg mx-auto mb-10 leading-relaxed">
             Whether you are a business seeking ESG support, a development
             organization designing a climate project, or a partner exploring
             cross-border collaboration, Verdantia can help turn sustainability
