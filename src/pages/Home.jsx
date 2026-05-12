@@ -137,21 +137,21 @@ export default function Home() {
               </Link>
             </motion.div>
 
-            <motion.div
-              custom={4}
-              variants={revealVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-forest/10"
-            >
+            <motion.div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10 border-t border-forest/10">
               {[
                 { n: "7+", l: "Core Service Areas" },
                 { n: "15+", l: "Industry & Community Focus Areas" },
                 { n: "2", l: "Operational Regions" },
                 { n: "100%", l: "Commitment to Sustainable Impact" },
               ].map((s, i) => (
-                <div key={i}>
+                <div
+                  key={i}
+                  custom={i}
+                  variants={revealVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.6 }}
+                >
                   <div
                     className={`font-serif text-4xl font-bold ${i % 2 === 1 ? "text-ocean-mid" : "text-forest"}`}
                   >
