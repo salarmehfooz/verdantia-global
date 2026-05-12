@@ -94,6 +94,7 @@ export default function Home() {
             <motion.h1
               custom={1}
               variants={revealVariants}
+              viewport={{ once: true, amount: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-light leading-[1.05] text-ink mb-6 tracking-tight"
             >
               Practical{" "}
@@ -273,12 +274,12 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative hidden lg:block"
+              className="block w-full lg:block"
             >
               <img
                 src="/home.png"
                 alt="Sustainability illustration"
-                className="rounded-2xl shadow-2xl w-full object-cover h-[380px]"
+                className="rounded-2xl shadow-2xl w-full h-[300px] md:h-[380px] object-cover"
               />
             </motion.div>
           </div>
