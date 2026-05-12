@@ -1,0 +1,126 @@
+@theme {
+  --font-serif: Georgia, serif;
+  --font-sans: Arial, sans-serif;
+}
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "DM Sans", sans-serif;
+
+  --color-forest: #1a4731;
+  --color-forest-mid: #2d6e4e;
+  --color-forest-light: #3d9166;
+  --color-sage: #7abf9a;
+  --color-mint: #c8e6d4;
+  --color-ocean: #0e3d6e;
+  --color-ocean-mid: #1a6db5;
+  --color-ocean-light: #4aaee8;
+  --color-ocean-bright: #2e96d6;
+  --color-sky: #b8dcf5;
+  --color-sky-pale: #e8f4fd;
+  --color-pearl: #f0f7ff;
+  --color-ink: #0a1628;
+  --color-slate: #1e3a5f;
+  --color-muted: #4a6680;
+  --color-gold: #b8934a;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-ink bg-white antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#1a6db5, #3d9166);
+  border-radius: 3px;
+}
+
+/* Animations that are hard to do purely with Tailwind/Motion */
+@keyframes shimmerSlide {
+  0%,
+  100% {
+    left: -100%;
+  }
+  50% {
+    left: 150%;
+  }
+}
+
+.shimmer-after::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(74, 174, 232, 0.35) 50%,
+    transparent 100%
+  );
+  animation: shimmerSlide 4s ease-in-out infinite 1s;
+}
+
+@keyframes morphBlob {
+  0%,
+  100% {
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    border-radius: 40% 60% 30% 70% / 60% 40% 70% 30%;
+    transform: rotate(45deg) scale(1.06);
+  }
+  50% {
+    border-radius: 70% 30% 50% 50% / 40% 70% 30% 60%;
+    transform: rotate(90deg) scale(0.95);
+  }
+  75% {
+    border-radius: 30% 70% 60% 40% / 70% 30% 60% 40%;
+    transform: rotate(135deg) scale(1.04);
+  }
+}
+
+.animate-morph {
+  animation: morphBlob 10s ease-in-out infinite;
+}
+
+@keyframes blobFloat {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 15px) scale(0.97);
+  }
+}
+
+.animate-blob-float {
+  animation: blobFloat 10s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
