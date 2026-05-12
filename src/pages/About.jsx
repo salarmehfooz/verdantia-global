@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { Target, Globe, Zap, ArrowRight } from "lucide-react";
-import ceo from "../assets/ceo.png";
+import ceo from "../assets/ceo.PNG";
 export default function About() {
   const revealVariants = {
     hidden: { opacity: 0, y: 30 },
